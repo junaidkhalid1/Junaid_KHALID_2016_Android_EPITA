@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.epita.android.whatilike.MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/my"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView2" />
+
+    <TextView
+        android:text="Firstname:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/firstntv"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView2"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="Junaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/junaidtv"
+        android:textSize="20sp"
+        android:layout_below="@+id/firstntv"
+        android:layout_alignStart="@+id/firstntv" />
+
+    <TextView
+        android:text="Lastname:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/junaidtv"
+        android:layout_alignStart="@+id/junaidtv"
+        android:layout_marginTop="13dp"
+        android:id="@+id/lastntv"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="KHALID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lastntv"
+        android:id="@+id/khalidtv"
+        android:textSize="20sp"
+        android:layout_below="@+id/lastntv" />
+
+    <TextView
+        android:text="Country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/khalidtv"
+        android:layout_alignStart="@+id/khalidtv"
+        android:layout_marginTop="12dp"
+        android:id="@+id/countrytv"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:text="PAKISTAN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paktv"
+        android:textSize="20sp"
+        android:layout_below="@+id/countrytv"
+        android:layout_alignEnd="@+id/lastntv" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/flag"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/paktv"
+        android:layout_alignStart="@+id/countrytv" />
+
+    <TextView
+        android:text="Like/don't like:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/liketv"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/liketv"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:text="This list is empty!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/liketv"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:id="@+id/Emptylv"/>
+
+
+
+</RelativeLayout>
